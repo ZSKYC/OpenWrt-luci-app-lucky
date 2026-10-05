@@ -329,10 +329,10 @@ do_download() {
         log "Total size: $(fmt_size "$total_size")"
         (
             while true; do
-                sleep 2
+                sleep 1
                 [ -f "$f" ] || continue
                 downloaded=$(wc -c < "$f" 2>/dev/null | tr -d ' ')
-                [ "${downloaded:-0}" -gt 0 ] || continue
+                [ "${downloaded:-0}" -gt 0 ] 2>/dev/null || continue
                 pct=$(awk "BEGIN{printf \"%d\", $downloaded*100/$total_size}")
                 echo "$pct" > "$progress"
                 [ "$pct" -ge 100 ] && break

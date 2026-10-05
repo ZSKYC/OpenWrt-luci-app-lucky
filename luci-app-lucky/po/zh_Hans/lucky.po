@@ -87,8 +87,8 @@ msgstr "启动安装失败"
 msgid "Found %d version(s)"
 msgstr "找到 %d 个版本"
 
-msgid "Complete: %s"
-msgstr "完成：%s"
+msgid "Installation complete: %s"
+msgstr "安装完成：%s"
 
 msgid "Switch to light theme"
 msgstr "切换到浅色主题"
@@ -537,3 +537,32 @@ msgstr "清除缓存"
 msgid "Starting…"
 msgstr "正在启动…"
 
+msgid "Color Customization"
+msgstr "颜色自定义"
+
+msgid "Drag to adjust colors. Changes apply in real-time."
+msgstr "拖动调节颜色，更改即时生效。"
+
+msgid "Primary Color"
+msgstr "主题色"
+
+msgid "Text Color"
+msgstr "文字色"
+
+msgid "Card Background"
+msgstr "卡片背景"
+
+msgid "Page Background"
+msgstr "页面背景"
+
+msgid "Custom"
+msgstr "自定义"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Restore All Defaults"
+msgstr "恢复全部默认"
+
+msgid "Close"
+msgstr "关闭"
