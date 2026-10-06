@@ -380,7 +380,7 @@ return view.extend({
                     C.buildFormRow('select', 'mirror', _('Download Mirror'),
                         cfg.mirror || 'github', null, [
                             { v: 'github', l: _('GitHub (github.com/gdy666/lucky)') },
-                            { v: 'r66666', l: _('Official (release.66666.plus)') }
+                            { v: 'r66666', l: _('Official (release.66666.host)') }
                         ]),
                     C.buildFormRow('select', 'release_type', _('Release Channel'),
                         cfg.release_type || 'stable',
