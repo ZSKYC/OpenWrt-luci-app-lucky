@@ -200,6 +200,7 @@ return view.extend({
 
         var restoreBtn = E('button', {
             type: 'button',
+            id: '_f_restore',
             class: 'lucky-btn lucky-btn-primary',
             click: function() {
                 restoreBtn.disabled = true;
@@ -234,7 +235,7 @@ return view.extend({
                                     _('Restore backup: %s ?').format(f.name)
                                 )) return;
                                 L.resolveDefault(
-                                    api.restoreBackup({ filename: f.name }), {}
+                                    api.restoreBackup(f.name), {}
                                 ).then(function(r) {
                                     var ok = r && r.result === 'ok';
                                     C.showToast({
@@ -278,6 +279,7 @@ return view.extend({
 
         var resetBtn = E('button', {
             type: 'button',
+            id: '_f_reset',
             class: 'lucky-btn lucky-btn-danger',
             click: function() {
                 if (!window.confirm(
